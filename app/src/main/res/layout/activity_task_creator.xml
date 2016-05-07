@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ninja.paranoidandroid.schedule.TaskCreator">
+
+    <EditText
+        android:id="@+id/et_task_creator_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/activity_task_creator_title"
+        />
+
+    <EditText
+        android:id="@+id/et_task_creator_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_task_creator_title"
+        android:hint="@string/activity_task_creator_description"
+        />
+    <Spinner
+        android:id="@+id/s_task_creator_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_task_creator_description"
+        />
+    <Spinner
+        android:id="@+id/s_task_creator_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_task_creator_user"
+        />
+    <CalendarView
+        android:id="@+id/cv_task_creator_execution_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_task_creator_priority"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/cv_task_creator_execution_date"
+        android:weightSum="2"
+        >
+    <Button
+        android:id="@+id/b_task_creator_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_weight="1"
+
+        />
+    <Button
+        android:id="@+id/b_task_creator_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_weight="1"
+
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>

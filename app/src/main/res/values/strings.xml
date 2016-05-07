@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Schedule</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="activity_task_creator_title">Task name</string>
+    <string name="activity_task_creator_description">Description</string>
+</resources>
